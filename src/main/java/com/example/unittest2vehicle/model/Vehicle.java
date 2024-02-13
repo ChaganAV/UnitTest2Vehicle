@@ -10,10 +10,9 @@ public abstract class Vehicle {
     /**
      * движение
      * уставливаем скорость
-     * @param speed скорость
      */
-    void testDrive(int speed){
-        setSpeed(speed);
+    void testDrive(){
+        setSpeed(0);
     }
 
     /**

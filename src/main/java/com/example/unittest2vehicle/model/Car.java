@@ -8,23 +8,24 @@ public class Car extends Vehicle{
         super.setModel(model);
         super.setYearRelease(year);
         super.setNumWheels(4);
-        testDrive(0);
+        testDrive();
     }
 
     @Override
-    void testDrive(int speed) {
-        if (speed<= 180)
-            super.testDrive(speed);
-        else{
-            System.out.println("Скорость слишком высокая, Боливар не выдержит");
-        }
-        if(speed<0){
-            System.out.println("Скорость не может быть отрицательной, лучше включите заднюю передачу ;)");
-        }
+    public void testDrive() {
+        setSpeed(60);
+//        if (speed<= 180)
+//            super.testDrive(speed);
+//        else{
+//            System.out.println("Скорость слишком высокая, Боливар не выдержит");
+//        }
+//        if(speed<0){
+//            System.out.println("Скорость не может быть отрицательной, лучше включите заднюю передачу ;)");
+//        }
     }
 
     @Override
-    void park() {
+    public void park() {
         super.park();
     }
 

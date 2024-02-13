@@ -3,27 +3,28 @@ package com.example.unittest2vehicle.model;
 public class Motorcycle extends Vehicle{
     public Motorcycle() {
     }
-    public Motorcycle(String company, String model, int year, int wheels){
+    public Motorcycle(String company, String model, int year){
         super.setCompany(company);
         super.setModel(model);
         super.setYearRelease(year);
-        super.setNumWheels(wheels);
-        testDrive(0);
+        super.setNumWheels(2);
+        testDrive();
     }
     @Override
-    void testDrive(int speed) {
-        if (speed<= 200)
-            super.testDrive(speed);
-        else{
-            System.out.println("Скорость слишком высокая, Боливар не выдержит");
-        }
-        if(speed<0){
-            System.out.println("Скорость не может быть отрицательной, просто толкайте его ;)");
-        }
+    public void testDrive() {
+        setSpeed(75);
+//        if (speed<= 200)
+//            super.testDrive(speed);
+//        else{
+//            System.out.println("Скорость слишком высокая, Боливар не выдержит");
+//        }
+//        if(speed<0){
+//            System.out.println("Скорость не может быть отрицательной, просто толкайте его ;)");
+//        }
     }
 
     @Override
-    void park() {
+    public void park() {
         super.park();
     }
 
