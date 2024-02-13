@@ -10,6 +10,9 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
  * тесты для Car
  */
 public class CarTest {
+    /**
+     * тестовый объект
+     */
     private Car car = new Car("BMW","X4",2016);
     /**
      * Проверить, что экземпляр объекта Car также является

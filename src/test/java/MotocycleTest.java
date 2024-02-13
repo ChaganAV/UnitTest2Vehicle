@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class MotocycleTest {
+    /**
+     * тестовый объект
+     */
     Motorcycle motorcycle = new Motorcycle("Chehy", "Sport", 1996);
     /**
      * Проверить, что экземпляр объекта Motorcycle также является
